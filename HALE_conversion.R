@@ -1,10 +1,10 @@
-adsbGeneralConversionScript <- "C:/Users/DJoyce/Documents/ADSB/CODE/adsbRead_v100.R"
+adsbGeneralConversionScript <- "C:/Users/XXXX/Documents/ADSB/CODE/adsbRead_v100.R"
 
-masterDataFile <- "C:/Users/DJoyce/Documents/ADSB/FAA_Releasable_Aircraft_Database/MASTER.txt"
-mfgCodeFile <- "C:/Users/DJoyce/Documents/ADSB/FAA_Releasable_Aircraft_Database/ACFTREF.txt"
+masterDataFile <- "C:/Users/XXXX/Documents/ADSB/FAA_Releasable_Aircraft_Database/MASTER.txt"
+mfgCodeFile <- "C:/Users/XXXX/Documents/ADSB/FAA_Releasable_Aircraft_Database/ACFTREF.txt"
 dataDir <- "D:/DATA/ADSB/HALE/TSV"
 
-setwd("C:/Users/DJoyce/Documents/ADSB/HALE/")
+setwd("C:/Users/XXXX/Documents/ADSB/HALE/")
 
 parkName <- "HALE"
 
@@ -24,5 +24,4 @@ adsbFilePattern <- "[a-zA-Z]+-\\d{8}[a-z]?.TSV.gz"
 
 adsbFiles <- dir(dataDir, pattern = adsbFilePattern, recursive = T, full.names=T)
 
-#adsbFiles <- grep("SUMM",adsbFiles, value = T)
 source(adsbGeneralConversionScript)
